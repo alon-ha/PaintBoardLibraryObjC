@@ -48,12 +48,7 @@
 }
 
 -(void)clear {
-    NSArray *layers = _paintBoard.layer.sublayers;
-    if ((layers != nil) && (layers.count > 0)) {
-        for (CALayer *layer in layers) {
-            [layer removeFromSuperlayer];
-        }
-    }
+    _paintBoard.layer.sublayers = nil;
 }
 
 -(void)setBoard:(PaintBoard *)paintBoard {

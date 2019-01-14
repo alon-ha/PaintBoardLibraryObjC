@@ -63,7 +63,7 @@
 
 -(void)clear {
     [_drawer clear];
-    _lines = [[NSMutableArray alloc] init];
+    [_lines removeAllObjects];
 }
 
 @end
