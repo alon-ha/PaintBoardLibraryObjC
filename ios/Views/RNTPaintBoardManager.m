@@ -23,7 +23,7 @@ RCT_EXPORT_MODULE()
 - (UIView *)view
 {
     if (!self.paintBoard) {
-        self.paintBoard = [[PaintBoard alloc] initWithIrrelevantParameter:YES];
+        self.paintBoard = [[PaintBoard alloc] init];
         return self.paintBoard;
     }
     
